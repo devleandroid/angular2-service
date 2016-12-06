@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { CursosService } from './cursos/cursos.service';
+
 import { AppComponent } from './app.component';
 import { CursosComponent } from './cursos/cursos.component';
 
@@ -16,7 +18,7 @@ import { CursosComponent } from './cursos/cursos.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
